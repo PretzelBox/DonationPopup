@@ -1,0 +1,16 @@
+.donations-area {
+  list-style-type: none;
+  padding: 15px 0 0 0;
+}
+ul.donations-area input[type=radio] {
+  padding-right: 5px;
+  display: block;
+  float: left;
+  padding-top: 0px;
+  margin-top: 2px;
+  margin-right: 5px;
+}
+ul.donations-area input[type=text] {
+  display: block;
+  margin-left: 15px;
+}

@@ -1,0 +1,32 @@
+##INCLUDESCRIPTBOTTOM[/store/inc/clientapi/ac-client-api.min.js]##
+##INCLUDESCRIPTBOTTOM[##THEMEDIR##js/donation.js]##
+
+<script>
+  $(function(){
+    window.page = new DonationPage({
+      storeName : '##STORENAME##',
+      amts : "25.00|50.00|75.00|100.00|other",
+      labels : "$25.00 (Twenty-five dollars)|$50.00 (Fifty dollars)|$75.00 (Seventy-five dollars)|$100.00 (One hundred dollars)|or choose another amount",
+      description : "<div>Thank you so much for your purchase.  Please consider making a tax deductible donation today to directly support ACLU's mission to defend and preserve the individual rights and liberties guaranteed by the Constitution.</div><br/><div>Please choose one of the following tax deductible donations. If you would like to donate a different amount, choose 'Other' from the list below.</div>",
+      btnText : 'Continue'
+    });
+  });
+</script>
+  
+<div class="modal fade" id="donation-modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title">Donation</h4>
+      </div>
+      <div class="modal-body">
+          
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" id="donation-decline">No, Thanks.</button>
+        <button type="button" class="btn btn-primary" id="donation-accept">Add Donation.</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
