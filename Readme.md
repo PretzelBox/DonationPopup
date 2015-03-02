@@ -26,7 +26,11 @@ window.page = new DonationPage({
 
 
 `storeName` - Default code uses `##STORENAME##` to by dynamic. Used in the donation name.
+
 `amts` - Pipe-separated list of available amounts. Should not include special characters like $. Must be a number or the special keyword `other` which binds to a free-form textbox
+
 `labels` - Pipe-separated list of labels for each of the amounts above. Must be the same number of entries as amounts.
+
 `description` - Text that goes above the donation amounts in the popup. HTML can be used here.
+
 `btnText`- The text of the place order button on page load before the popup has been triggered.
